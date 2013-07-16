@@ -1,0 +1,27 @@
+
+
+/* =Hoverbox Code
+----------------------------------------------------------------------*/
+
+.hoverbox
+{
+	margin-top: 20px;
+	list-style: none;
+}
+
+
+.hoverbox img
+{
+	color: inherit;
+	vertical-align: top;
+	width: 200px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.hoverbox li
+{
+	float: left;
+	margin-right: 10px;
+}

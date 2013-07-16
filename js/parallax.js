@@ -4,7 +4,7 @@ $(document).ready(function() {
 		$(window).scroll(function() {
 			var yPos = -($window.scrollTop() / 10); 
 			var coords = '50% '+ yPos + 'px';
-			$bgobj.css({ background-position: coords });
+			$bgobj.css({ backgroundPosition: coords });
 		});
 	});
 });
