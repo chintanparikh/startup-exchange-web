@@ -6,6 +6,7 @@
 .hoverbox
 {
 	margin-top: 20px;
+	margin-bottom: 20px;
 	list-style: none;
 }
 
@@ -20,8 +21,14 @@
 	-webkit-border-radius: 5px;
 }
 
-.hoverbox li
+.hoverbox.left-hover li
 {
 	float: left;
-	margin-right: 10px;
+	margin-right: 19px;
+}
+
+.hoverbox.right-hover li
+{
+	float: right;
+	margin-left: 19px;
 }

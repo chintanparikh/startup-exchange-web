@@ -5,6 +5,6 @@ $(document).ready(function() {
 			var yPos = -($window.scrollTop() / 10); 
 			var coords = '50% '+ yPos + 'px';
 			$bgobj.css({ backgroundPosition: coords });
-		});
+		});	
 	});
 });

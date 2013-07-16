@@ -89,6 +89,23 @@ h1 {
 	display: block;
 }
 
+#threeDayStartup {
+	background: url(../img/3ds.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	display: block;
+}
+
 #ssContent {
 	position: relative;
+}
+
+.callToAction{
+	color: #FFFFFF;
+	font-family: "Fauna One", sans-serif;
+	font-size: 16px;
+	text-decoration: none;
 }
