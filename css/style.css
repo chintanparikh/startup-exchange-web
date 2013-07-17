@@ -62,7 +62,17 @@ h1 {
 	line-height: 28px;
 	max-width: 800px;
 	margin-bottom: 20px;
+}
 
+.content a {
+	color: #FFFFFF;
+}
+
+.content a:hover {
+	color: #F2F2F2;
+}
+.content a:visited {
+	color: #FFFFFF;
 }
 
 .navigation {
@@ -112,12 +122,16 @@ h1 {
 	background: url(../img/3ds.jpg) no-repeat center center fixed;
 }
 
-#manifesto {
+#about {
 	background: url(../img/bg.png) no-repeat center center fixed;
 }
 
 #ssContent {
 	position: relative;
+}
+
+p.aboutCopy {
+	max-width: 800px;
 }
 
 .space {
