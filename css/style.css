@@ -130,6 +130,18 @@ h1 {
 	position: relative;
 }
 
+#mce-EMAIL {
+	border: 0;
+	height: 31px;
+	width: 300px;
+	border-radius: 5px;
+	margin-top: 10px;
+	font-family: "Fauna One";
+	font-size: 15px;
+	padding: 0 10px;
+	outline: none;
+}
+
 p.aboutCopy {
 	max-width: 800px;
 }
