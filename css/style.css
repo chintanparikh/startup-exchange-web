@@ -50,6 +50,8 @@ h1 {
 	font-size: 17px;
 	font-weight: 200;
 	font-family: 'Fauna One', serif;
+	width: 650px;
+	line-height: 28px;
 }
 
 .navigation {
@@ -103,9 +105,22 @@ h1 {
 	position: relative;
 }
 
+.space {
+	height: 30px;
+	clear: both;
+	display: block;
+}
+
 .callToAction{
 	color: #FFFFFF;
 	font-family: "Fauna One", sans-serif;
 	font-size: 16px;
 	text-decoration: none;
+	background: #000000;
+	width: 300px;
+	height: 30px;
+	border: 10px solid #000000;
+	border-radius: 5px;
+	margin-top: 5px;
+	padding: 0 10px;
 }
