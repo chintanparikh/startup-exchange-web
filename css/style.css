@@ -50,8 +50,19 @@ h1 {
 	font-size: 17px;
 	font-weight: 200;
 	font-family: 'Fauna One', serif;
-	width: 650px;
+	max-width: 650px;
 	line-height: 28px;
+}
+
+.content {
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: 200;
+	font-family: 'Fauna One', serif;
+	line-height: 28px;
+	max-width: 800px;
+	margin-bottom: 20px;
+
 }
 
 .navigation {
@@ -81,8 +92,7 @@ h1 {
   clear: both;
 }
 
-#startupSemester {
-	background: url(../img/startupsemester.jpg) no-repeat center center fixed;
+.group {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -91,14 +101,19 @@ h1 {
 	display: block;
 }
 
+#copy {
+	width: 500px;
+}
+#startupSemester {
+	background: url(../img/startupsemester.jpg) no-repeat center center fixed;
+}
+
 #threeDayStartup {
 	background: url(../img/3ds.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: 100%;
-	display: block;
+}
+
+#manifesto {
+	background: url(../img/bg.png) no-repeat center center fixed;
 }
 
 #ssContent {
