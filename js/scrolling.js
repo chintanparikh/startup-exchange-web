@@ -143,3 +143,20 @@ setInterval('ss.scrollWindow('+ss_stepsize+','+desty+',"'+anchor+'")',10);
 ss.STEPS = 25;
 
 ss.addEvent(window,"load",ss.fixAllLinks);
+
+$(document).ready(function(){
+  var $window = $(window),
+  $stickyEl = $('.static-nav'),
+  elTop = $stickyEl.offset().top;
+
+  $window.scroll(function() {
+    if ($window.scrollTop() > $window.height() - 100)
+    {
+      $stickyEl.show(300);
+    }
+    else
+    {
+      $stickyEl.hide(300);
+    }
+  });
+});

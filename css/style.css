@@ -41,8 +41,24 @@ h1 {
 .corner {
 	position: fixed;
 	margin: 20px;
+}
+
+.logo {
 	height: 50px;
 	width: 50px;
+}
+
+.static-nav {
+	position: fixed;
+	line-height: 50px;
+	margin-left: 10px;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+.hidden {
+	display: none;
 }
 
 .tagline {
@@ -109,7 +125,7 @@ h1 {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 100%;
+	min-height: 100%;
 	display: block;
 }
 
@@ -131,7 +147,9 @@ h1 {
 #ssContent {
 	position: relative;
 }
-
+#about h1 {
+	margin-bottom: 10px;
+}
 #mce-EMAIL {
 	border: 0;
 	height: 31px;
