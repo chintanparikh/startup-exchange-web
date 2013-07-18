@@ -16,6 +16,15 @@ $(document).ready(function() {
     }
   });
 
+
+
+  $("#mce-EMAIL").focus(function()
+  {
+    if (isValidEmailAddress($('#mce-EMAIL').val())) {
+      $('.tooltip').tooltipster('show');
+    }
+  });
+
   $("#mce-EMAIL").blur(function()
   {
     $('.tooltip').tooltipster('hide');
