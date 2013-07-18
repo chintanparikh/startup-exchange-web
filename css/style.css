@@ -6,10 +6,10 @@ html, body {
 
 .splash {
 	background: url(../img/bg.png) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: 130%;;
+	-moz-background-size: 130%;;
+	-o-background-size: 130%;;
+	background-size: 130%;
 	height: 100%;
 	display: block;
 }
@@ -121,10 +121,10 @@ h1 {
 }
 
 .group {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: 130%;;
+	-moz-background-size: 130%;;
+	-o-background-size: 130%;;
+	background-size: 130%;;
 	min-height: 100%;
 	display: block;
 }

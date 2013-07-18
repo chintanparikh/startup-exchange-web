@@ -144,6 +144,7 @@ ss.STEPS = 25;
 
 ss.addEvent(window,"load",ss.fixAllLinks);
 
+// For showing the top link once below the fold
 $(document).ready(function(){
   var $window = $(window),
   $stickyEl = $('.static-nav'),
@@ -160,3 +161,49 @@ $(document).ready(function(){
     }
   });
 });
+
+// Parallax
+$(document).ready(function() {
+  var $window = $(window);
+  var group = $('.group');
+  $window.scroll(function() {
+    var elements = [getTopOfWindow(group), getBottomOfWindow(group)];
+    $(elements).each(function(index, element) {
+      $element = $(element);
+      $element.css("background-position-y", $window.scrollTop() * 100 / ($element.position().top + $element.height()) + "%")
+    });
+  });
+});
+
+function getTopOfWindow(group) {
+  var topElement = null;
+  var i = 0;
+  var $window = $(window);
+  while (topElement == null && i < group.size())
+  {
+    $element = $(group[i]);
+    if ($element.position().top > $window.scrollTop() - $window.height())
+    {
+      topElement = $element;
+    }
+    i++;
+  }
+  return topElement[0];
+}
+
+function getBottomOfWindow(group) {
+  var bottomElement = null;
+  var i = 0;
+  var $window = $(window);
+  while (bottomElement == null && i < group.size())
+  {
+    $element = $(group[i]);
+    if ($element.position().top > $window.scrollTop())
+    {
+      bottomElement = $element;
+    }
+    i++;
+  }
+
+  return bottomElement[0];
+}

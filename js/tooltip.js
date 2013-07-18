@@ -1,7 +1,8 @@
 $(document).ready(function() {
   
   $('.tooltip').tooltipster({
-    trigger: 'custom'
+    trigger: 'custom',
+    position: 'bottom-left'
   });
   
   $("#mce-EMAIL").keypress(function(e)
