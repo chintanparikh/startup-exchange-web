@@ -1,3 +1,8 @@
+
+#top, #about, #startupSemester, #threeDayStartup {
+	background: #000000;
+}
+
 .box {
 	text-align: center;
 	margin-top: 10px;
