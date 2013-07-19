@@ -5,15 +5,23 @@
 
 .box {
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	border: none;
 }
 
 .corner {
 	display: none;
 }
 
+.space {
+	display: none;
+}
+
+.group {
+	border: none;
+}
 #mobile-logo {
-	margin-top:5%;
 	margin-bottom: 1%;
 }
 .right {
@@ -79,10 +87,33 @@ h1 {
 	text-align: left;
 	font-size: 15px;
 	line-height: 20px;
-	margin: 0 20px;
-	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
+.content {
+	margin: 0 10%;
+	margin-top: 3%;
+	line-height: 25px;
+}
+
+.tagline {
+	margin: 0 10%;
+	margin-top: 3%;
+	line-height: 25px;
+}
+
+.hoverbox.right-hover li {
+	float: none;
+	margin: 0 auto;
+	margin-bottom: 2%;
+}
+
+.hoverbox.left-hover li {
+	float: none;
+	margin: 0 auto;
+	margin-bottom: 2%;
+}
 #emailtag {
 	margin-top: 20px;
 }
@@ -130,7 +161,16 @@ h1 {
 	display: none;
 }
 
-.content {
-	margin: 0 30px;
-	line-height: 25px;
+.callToAction {
+	color:#000000;
+	font-family:"Fauna One", sans-serif;
+	text-decoration:none;
+	background:#FFFFFF;
+	border: 7px solid #FFFFFF;
+	border-radius: 3px;
+	margin-bottom: 50px;
+}
+
+.preview.last {
+	display: none;
 }
