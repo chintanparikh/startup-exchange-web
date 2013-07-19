@@ -13,8 +13,8 @@
 }
 
 #mobile-logo {
-	margin-top:15px;
-	margin-bottom: 5px;
+	margin-top:5%;
+	margin-bottom: 1%;
 }
 .right {
 	width: 100%;
@@ -28,7 +28,7 @@
 
 h1 {
 	display: inline;
-	line-height: 40px;
+	line-height: 15%;
 	font-size: 30px;
 }
 
