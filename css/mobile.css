@@ -1,0 +1,131 @@
+.box {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.corner {
+	display: none;
+}
+
+#mobile-logo {
+	margin-top:15px;
+	margin-bottom: 5px;
+}
+.right {
+	width: 100%;
+	float:none;
+}
+
+.left {
+	width: 100%;
+	float: none;
+}
+
+h1 {
+	display: inline;
+	line-height: 40px;
+	font-size: 30px;
+}
+
+#sX {
+	line-height: 40px;
+	font-size: 30px;
+	display: block;
+}
+
+#slogan {
+	text-align: center;
+}
+
+.navigation {
+	font-size: 15px;
+	margin-top: 30px;
+}
+
+.navigation li {
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+.navigation li a {
+	color: #000000;
+	margin: 0 auto;
+	height: 20px;
+	line-height: 20px;
+	background: #FFFFFF;
+	width: 200px;
+	margin-bottom: 10px;
+	border: 5px solid #FFFFFF;
+	border-radius: 3px;
+	--moz-border-radius: 3px;
+	--webkit-border-radius: 3px;
+	color: #000000;
+	display: block;
+}
+
+.navigation li a:active {
+	background: #DDDDDD;
+	border: 5px solid #DDDDDD;
+}
+
+#copy .content{
+	display: none;
+	text-align: left;
+	font-size: 15px;
+	line-height: 20px;
+	margin: 0 20px;
+	margin-top: 10px;
+}
+
+#emailtag {
+	margin-top: 20px;
+}
+
+#mce-EMAIL {
+	border:5px solid #FFFFFF;
+	height:20px;
+	width:200px;
+	border-radius:3px;
+	--moz-border-radius:3px;
+	--webkit-border-radius:3px;
+	font-family:"Fauna One";
+	font-size:15px;
+	outline:none;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+#email-main {
+	display: none;
+}
+
+.tooltipster-base {
+	display: none;
+}
+
+.subscribe {
+	width:200px;
+	border:5px solid #000000;
+	border-radius:3px;
+	--moz-border-radius:3px;
+	--webkit-border-radius:3px;
+
+	font-family:"Fauna One";
+	font-size:15px;
+	outline: none;
+	margin: 0 auto;
+	margin-top: 10px;
+	color:#FFFFFF;
+	text-decoration:none;
+	background:#000000;
+}
+
+#about-main {
+	display: none;
+}
+
+.content {
+	margin: 0 30px;
+	line-height: 25px;
+}
