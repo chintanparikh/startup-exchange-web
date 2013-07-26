@@ -10,17 +10,26 @@ h1 {
 }
 
 .right {
-	text-align:right;
-	float:right;
-	margin-right:180px;
+	margin-right: 0;
+	margin-left: 0;
+	text-align:left;
+	float:left;
+	margin-left:10%;
 	font-size:13px;
 }
 
 .left {
 	text-align:left;
 	float:left;
-	margin-left:180px;
+	margin-left:10%;
 	font-size:13px;
+}
+
+.hoverbox.right-hover li
+{
+	float: left;
+	margin-left: 0;
+	margin-right: 19px;
 }
 
 .static-nav {
@@ -60,8 +69,8 @@ h1 {
 .content a:hover {
 	color:#F2F2F2;
 }
+
 .navigation {
-	clear: both;
 	margin-top:30px;
 }
 
@@ -81,6 +90,15 @@ h1 {
 
 .navigation li a:hover {
 	color:#D8C7B1;
+}
+
+.navigation li a {
+	color:#E7DBCA;
+	font-size:12px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-family:Arial;
+	text-shadow:5 0 0.2em #000000;
 }
 
 .navigation li a:hover {
@@ -171,9 +189,32 @@ p.aboutCopy {
 	display: none;
 }
 
-#email-main {
+#copy {
+	display: none;
+}
 
-	float: right;
+#email-main {
+	float: left;
 	clear: both;
-	margin-right: 180px;
+	margin-left: 10%;
+	margin-top: 20px;
+}
+
+.static-nav {
+	
+	position: fixed;
+	line-height: 150px;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 10pt;
+	text-align: center;
+	float: left;
+	width: 50px;
+	margin: 0 auto;
+	margin-left: -50px;
+}
+
+
+.preview.last {
+	display: none;
 }

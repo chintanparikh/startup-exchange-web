@@ -63,9 +63,9 @@ h1 {
 
 
 .navigation li a {
-	text-decoration:none;
 	text-transform:uppercase;
 	font-family:Arial;
+	text-decoration: underline;
 }
 
 .social {
