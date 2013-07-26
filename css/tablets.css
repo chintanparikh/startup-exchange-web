@@ -224,3 +224,12 @@ p.aboutCopy {
 .preview.last {
 	display: none;
 }
+
+.corner {
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.corner {
+	display: none;
+}
