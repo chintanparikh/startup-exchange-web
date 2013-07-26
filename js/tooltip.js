@@ -12,7 +12,7 @@ $(document).ready(function() {
     }
     if (e.which == 13 ) {
       e.preventDefault();
-      $("#emailForm").submit();
+      $("#email-main").submit();
       $('.tooltip').tooltipster('hide');
     }
   });
