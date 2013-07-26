@@ -5,6 +5,12 @@ h1 {
 	font-family:"Century Gothic","Lucida Grande", Arial, sans-serif;
 }
 
+h2 {
+	color:#FFFFFF;
+	font-size:60px;
+	font-family:"Century Gothic","Lucida Grande", Arial, sans-serif;
+}
+
 .box {
 	margin-top:100px;
 }
@@ -201,7 +207,7 @@ p.aboutCopy {
 }
 
 .static-nav {
-	
+
 	position: fixed;
 	line-height: 150px;
 	color: #ffffff;
