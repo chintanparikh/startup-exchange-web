@@ -40,6 +40,14 @@ h1 {
 	font-size: 30px;
 }
 
+h2 {
+	font-family: "Century Gothic","Lucida Grande", Arial, sans-serif;
+	color: #FFFFFF;
+	display: inline;
+	line-height: 15%;
+	font-size: 30px;
+}
+
 #sX {
 	line-height: 40px;
 	font-size: 30px;
