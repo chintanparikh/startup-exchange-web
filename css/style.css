@@ -12,7 +12,8 @@ html, body {
 }
 
 #about {
-	background:url(../img/about.jpg) no-repeat center center fixed;
+	/*background:url(../img/3ds.jpg) no-repeat center center fixed;*/
+	background: #FFFFFF;
 }
 
 #startupSemester {
@@ -20,7 +21,11 @@ html, body {
 }
 
 #threeDayStartup {
-	background:url(../img/3ds.jpg) no-repeat center center fixed;
+	background:url(../img/about.jpg) no-repeat center center fixed;
+}
+
+#hackAtTech {
+	background:url(../img/hackattech.jpg) no-repeat center center fixed;
 }
 
 /* Re-used elements */
@@ -116,8 +121,8 @@ h1 {
 }
 
 .logo {
-	height:50px;
-	width:50px;
+	height:40px;
+	width:40px;
 }
 
 /* Single use */
@@ -132,4 +137,23 @@ h1 {
 
 ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
 	color:#595959;
+}
+
+
+#nav ul{
+	list-style: none;
+	line-height: 80px;
+	display: inline;
+	float: right;
+}
+
+#nav li {
+	display: inline;
+	line-height: 80px;
+	float: right;
+	margin-right: 10px;
+	font-size: 17px;
+	font-family: "Century Gothic","Lucida Grande", Arial, sans-serif;
+	text-transform: uppercase;
+	font-family: bold;
 }
