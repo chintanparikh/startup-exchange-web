@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>Startup Exchange Events - Georgia Tech's Entrepreneurial Movement</title>
+	<meta name="description" content="Georgia Tech's Entrepreneurial Movement. We throw amazing events and connect amazing people.">
+	<meta name="keywords" content="Startup,Exchange,Connection,Multidisciplinary,Ideas,Entrepreneurship,Community,Collaboration">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href='http://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" media="screen" type="text/css" href="/css/reset.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="/fonts/socialico/socialico.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="/vendor/hoverbox/css/hoverbox.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="/vendor/hoverbox/css/ie_fixes.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="/vendor/tooltipster/css/tooltipster.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="/vendor/slimbox/css/slimbox2.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="/css/style.css" />
+	  
+	<!-- Targetting mobile devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" media="screen and (max-device-width : 480px)" type="text/css" href="/css/mobile.css" />
+	<link rel="stylesheet" media="screen and (max-width : 480px)" type="text/css" href="/css/mobile.css" />
+	<link rel="stylesheet" media="screen and (max-device-width: 480px)" type="text/css" href="/css/mobile.css" />
+	<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:.75)" type="text/css" href="/css/mobile.css" />
+	<!--[if IEMobile 7]>  	
+		<link rel="stylesheet" media="screen" type="text/css" href="/css/mobile.css" />
+	<![endif]-->
+
+	<!-- Tablets -->
+	<link rel="stylesheet" media="screen and (min-width : 480px) and (max-width : 800px)" type="text/css" href="/css/tablets.css" />
+	<link rel="stylesheet" media="screen and (min-device-width : 480px) and (max-device-width : 800px)" type="text/css" href="/css/tablets.css" />
+
+	<!-- Thinner screens -->
+	<link rel="stylesheet" media="screen and (min-width : 800px) and (max-width : 1224px)" type="text/css" href="/css/smaller-screens.css" />
+	<link rel="stylesheet" media="screen and (min-device-width : 800px) and (max-device-width : 1224px)" type="text/css" href="/css/smaller-screens.css" />
+
+	<!-- Desktops, Laptops -->
+	<link rel="stylesheet" media="screen and (min-width: 1224px)" type="text/css" href="/css/pc.css" />
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-42745108-1', 'gatech.edu');
+	  ga('send', 'pageview');
+
+	</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/calendarproxy.js"></script>
+<script type="text/javascript" src="/js/date.js"></script>
+<script type="text/javascript">
+
+var url = "https://www.google.com/calendar/feeds/orpm6td3rsutl3972oosf4ksds%40group.calendar.google.com/public/full-noattendees";
+
+function pretty_time(d){
+    var hours = d.getHours();
+    var minutes = d.getMinutes();
+    var ampm = "am";
+    if( hours == 0 ){
+        hours = 12;
+    }else if(hours == 12){
+        ampm="pm";
+    }else if(hours>12){
+        hours = hours % 12; ampm = "pm";
+    }
+    if( hours==12 && minutes==0 ) return (ampm=="am" ? "midnight" : "noon");
+    return hours+( minutes != 0 ? ":"+(minutes<10?"0":"")+minutes : "" )+" "+ampm;
+}
+
+function pretty_date(d){
+    var today = new Date(); //.today();
+    var one_day = 1000*60*60*24;
+    //var nextweek = today.add({days: 14});
+    var diff = Math.ceil(d.getTime() - today.getTime())/one_day;
+    if(diff==-1) return "Yesterday at "+pretty_time(d);
+    else if(diff==0) return "Today at "+pretty_time(d);
+    else if(diff==1) return "Tomorrow at"+pretty_time(d);
+    else if(diff<0 && diff>-7) return "Last "+day_to_string(d.getDay())+" at "+pretty_time(d);
+    else if(diff>0 && diff<7)  return "This "+day_to_string(d.getDay())+" at "+pretty_time(d);
+    else if(diff>=7 && diff<14)  return "Next "+day_to_string(d.getDay())+" the "+number_endings(d.getDate())+" at "+pretty_time(d);
+    else return month_to_string(d.getMonth())+" "+number_endings(d.getDate())+" at "+pretty_time(d);
+}
+
+function number_endings(n){
+    switch(n%10){
+        case 1:  return n+"st"; break;
+        case 2:  return n+"nd"; break;
+        case 3:  return n+"rd"; break;
+        default: return n+"th";
+    }
+}
+
+function day_to_string(d){
+    var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    return days[d];
+}
+
+function month_to_string(m){
+    var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    return months[m];
+}
+
+
+function format(event){
+    console.log(typeof(event.start));
+    var when= new Date(event.start);
+    return (
+    '<div class="event">'+
+        '<a href="'+event.html_link+'">'+
+            "<h3>"+(event.title || "Untitled")+"</h3>"+
+        '</a>'+
+        (event.where ? "Where: "+event.where+"<br>" : "")+
+        pretty_date(when) + "<br>"+
+        (event.author.name ?
+            "Contact: "+ (event.author.email ? '<a href="mailto:'+event.author.email+'">'+event.author.name+'</a>'
+                : event.author.name )
+        : "")+
+    '</div>'
+    );
+}
+
+$(document).ready(function(){
+    $('#loading').show();
+    $('#content').hide();
+    get_calendar(url, {}, function(events){
+        
+        $('#events').append("<ul>");
+        for(var i=0;i<events.length;i++){
+            $('#events').append(
+                //"<li>"+"<b>"+e.title+"</b>"+"</li>"
+                format(events[i])
+            );
+        }
+        $('#events').append("</ul>");
+        $('#loading').hide();
+        $('#content').show();
+    });
+});
+
+</script>
+</head>
+<body>
+<div id="loading" class="event" style="text-align:center; background:white;"><img src="/img/loading.gif"/></div>
+    <div id="content" class="content">
+    <h2 style="margin:10pt;">Upcoming Events</h2>
+    <div id="events">
+    </div>
+<div>
+</body>
+</html>

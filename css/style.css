@@ -157,3 +157,23 @@ h1 {
 	text-transform: uppercase;
 	font-family: bold;
 }
+
+/* Calendar */
+.event{
+    background-color: lightslategray;
+    padding: 10pt;
+    border-radius: 10pt;
+    width: 60%;
+    color: honeydew;
+    margin-bottom: 10pt;
+    text-align: center;
+}
+
+.event h3{
+    margin-top: 5px;
+    font-size: x-large;
+}
+
+.event a:link{
+    color: whitesmoke;
+}
